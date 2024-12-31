@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="bg-gray-100">
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Portfolio Logo">ByCar Mech</a>
+        <nav class="navbar">
+            <a href="index.html" aria-label="Home">Home</a>
+            <a href="about.html" aria-label="About">About Us</a> 
+            <a href="new.html" aria-label="Our Services">Our Services</a>
+            <a href="new.html" aria-label="Portfolio">Book Service</a>
+            <a href="contact.html" aria-label="Contact">Contact</a>
+        </nav>
+    </header>
+
+</header><main class="container mx-auto p-6 center-content multi-colored-background">
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2><br><br>
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 md:pr-4">
+                <h3 class="text-xl font-semibold mb-2">Our Contact Details :-</h3><br><br>
+                <p class="mb-2">
+                    <i class="fas fa-phone-alt"></i>
+                    Phone: +91 9876543210
+                </p><br>
+                <p class="mb-2">
+                    <i class="fas fa-envelope"></i>
+                    Email: contact@bycarmech.com
+                </p><br>
+                <p class="mb-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Address: Guntur , Andhra Pradesh
+                </p><br><br>
+                <img alt="Description of the new image" class="mt-4 rounded-lg" height="300" src="" width="400"/>
+            </div>
+            <div class="md:w-1/2 md:pl-4 mt-6 md:mt-0">
+                <br><br><h3 class="text-xl font-semibold mb-2">Get in Touch</h3><br><br>
+                <form class="space-y-4" id="contactForm" action="#" method="POST">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700" for="name">Name</label><br>
+                        <br><input class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="name" name="name" required type="text"/>
+                    </div>
+                    <div>
+                        <br><label class="block text-sm font-medium text-gray-700" for="email">Email</label><br>
+                        <br><input class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="email" name="email" required type="email"/>
+                    </div>
+                    <div>
+                        <br><label class="block text-sm font-medium text-gray-700" for="message">Message</label><br>
+                        <br><textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" id="message" name="message" required rows="4"></textarea>
+                    </div>
+                    <div>
+                        <br><button class="w-full bg-indigo-600 text-white p-2 rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
