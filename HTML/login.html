@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            h1 {
+                color: green;
+            }
+            fieldset {
+                background-color: antiquewhite;
+                padding: 25px 50px 20px 10px;
+                display: inline-block;
+                text-align: left;
+                border-radius: 20px;
+            }
+            legend {
+                background-color: rgb(5, 5, 5);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+            input {
+                margin: 5px;
+            }
+            .button1 {
+                background-color: chartreuse;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br>
+        <i class="material-icons" style="font-size:48px;color:red">account_circle</i>
+        <h1>ADMIN LOGIN...</h1><br><br>
+        <form onsubmit="return login()">
+            <fieldset>
+                <legend>Login :-</legend>
+                <label for="username">User Name:-</label>
+                <input type="text" id="username" name="username"><br><br><br>
+                <label for="password">Password:-</label>
+                <input type="password" id="password" name="password"><br>
+                <button type="submit" id="submit" class="button1">Submit</button>
+            </fieldset>
+        </form>
+        <script>
+            function login() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                if (username === "admin" && password === "admin") {
+                    alert("Login Successful");
+                    window.location.href = "index.html";
+                    return false;
+                } else {
+                    alert("Invalid Username or Password");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
