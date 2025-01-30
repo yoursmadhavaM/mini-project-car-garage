@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
+        <title>Admin-Login</title>
         <style>
             body {
                 text-align: center;
@@ -30,13 +30,21 @@
                 display: block;
                 margin: 20px auto;
             }
+            footer{
+                background-color: lightslategrey;
+                margin-top: 150px;
+            }
+            a{
+                margin-left: 20%;
+                font-size: small;
+            }
         </style>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <br><br><br><br><br><br><br><br>
         <i class="material-icons" style="font-size:48px;color:red">account_circle</i>
-        <h1>ADMIN LOGIN...</h1><br><br>
+        <h1>USER LOGIN...</h1><br><br>
         <form onsubmit="return login()">
             <fieldset>
                 <legend>Login :-</legend>
@@ -45,6 +53,7 @@
                 <label for="password">Password:-</label>
                 <input type="password" id="password" name="password"><br>
                 <button type="submit" id="submit" class="button1">Submit</button>
+                <a href="registration.html" >Dont you have Account ? SignUp.</a>
             </fieldset>
         </form>
         <script>
@@ -52,7 +61,6 @@
                 var username = document.getElementById("username").value;
                 var password = document.getElementById("password").value;
                 if (username === "admin" && password === "admin") {
-                    alert("Login Successful");
                     window.location.href = "index.html";
                     return false;
                 } else {
@@ -62,4 +70,7 @@
             }
         </script>
     </body>
+    <footer>
+        copyrights reserved -@ByCarMech-
+    </footer>
 </html>
