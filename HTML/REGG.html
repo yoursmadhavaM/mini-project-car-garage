@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            button {
+                border-radius: 25%;
+                background-color: aqua;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            body {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+            fieldset {
+                background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                width: 100%;
+                max-width: 500px;
+                height: 300px;
+                padding: 30px;
+                text-align: center;
+                border: none;
+                background-color: #fff;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+        <title>Registration</title>
+    </head>
+    <body>
+        <form onsubmit="return Sign(event)">
+            <fieldset>
+                <h1>Welcome Back!</h1>
+                <br>
+                <h3>To keep connected with us <br>please login with your personal info</h3>
+                <br>
+                <button type="submit">SIGN IN</button>
+            </fieldset>
+        </form>
+        <script>
+            function Sign(event)
+            {
+                event.preventDefault();  
+                window.location.href = "login.html"; 
+            }
+        </script>
+    </body>
+</html>
